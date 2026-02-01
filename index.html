@@ -6,17 +6,18 @@
   <title>Be My Valentine ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body onclick="playMusic()">
 
-  <!-- Background Music -->
+  <!-- Background Music (one-tap play) -->
   <audio id="bgMusic" loop>
     <source src="music.mp3" type="audio/mpeg">
   </audio>
 
-  <!-- Floating Hearts -->
+  <!-- Floating hearts -->
   <div class="hearts"></div>
 
-  <!-- Mobile Reel Container -->
+  <!-- Reel Container -->
   <div class="reel">
     <h1>Hey <span>RIMJHIM</span> ❤️</h1>
 
@@ -25,15 +26,9 @@
       I built one.
     </p>
 
-    <!-- Photo Slider -->
+    <!-- Smooth Photo Slider -->
     <div class="slider">
-      <div class="slides">
-        <img src="photo1.jpg" alt="Memory 1">
-        <img src="photo2.jpg" alt="Memory 2">
-        <img src="photo3.jpg" alt="Memory 3">
-        <img src="photo4.jpg" alt="Memory 4">
-        <img src="photo5.jpg" alt="Memory 5">
-      </div>
+      <img id="slideImage" src="photo1.jpg" alt="Memory">
     </div>
 
     <div class="box">
@@ -49,7 +44,7 @@
       <button class="no" onmouseover="moveNo()">No 😝</button>
     </div>
 
-    <p class="hint">Tap anywhere for music 🎵</p>
+    <p class="hint">Tap anywhere 🎵</p>
   </div>
 
   <script src="script.js"></script>
