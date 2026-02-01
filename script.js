@@ -1,6 +1,6 @@
+/* ONE-TAP MUSIC */
 let musicPlayed = false;
 
-// Play music on first tap
 function playMusic() {
   if (!musicPlayed) {
     document.getElementById("bgMusic").play();
@@ -8,7 +8,7 @@ function playMusic() {
   }
 }
 
-// YES button
+/* YES BUTTON */
 function yesClick() {
   document.querySelector('.reel').innerHTML = `
     <h1>YAYYY 😍❤️</h1>
@@ -21,7 +21,7 @@ function yesClick() {
   `;
 }
 
-// NO button runs away
+/* NO BUTTON RUNS */
 function moveNo() {
   const noBtn = document.querySelector('.no');
   const x = Math.random() * 200 - 100;
@@ -29,7 +29,29 @@ function moveNo() {
   noBtn.style.transform = `translate(${x}px, ${y}px)`;
 }
 
-// Floating hearts generator
+/* SMOOTH PHOTO SLIDER */
+const photos = [
+  "photo1.jpg",
+  "photo2.jpg",
+  "photo3.jpg",
+  "photo4.jpg",
+  "photo5.jpg"
+];
+
+let currentIndex = 0;
+const slideImage = document.getElementById("slideImage");
+
+setInterval(() => {
+  slideImage.style.opacity = 0;
+
+  setTimeout(() => {
+    currentIndex = (currentIndex + 1) % photos.length;
+    slideImage.src = photos[currentIndex];
+    slideImage.style.opacity = 1;
+  }, 500);
+}, 3000);
+
+/* FLOATING HEARTS */
 const heartsContainer = document.querySelector('.hearts');
 
 setInterval(() => {
