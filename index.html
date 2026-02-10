@@ -1,56 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Be My Valentine ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body onclick="playMusic()">
+<div class="hearts"></div>
 
-  <!-- Background Music (one-tap play) -->
-  <audio id="bgMusic" loop>
-    <source src="music.mp3" type="audio/mpeg">
-  </audio>
+<div class="card" id="card">
+  <h1>Hey ❤️</h1>
+  <p>You didn’t get a gift…<br>I built one.</p>
+  <h2>Will you be my Valentine? 💘</h2>
 
-  <!-- Floating hearts -->
-  <div class="hearts"></div>
-
-  <!-- Reel Container -->
-  <div class="reel">
-    <h1>Hey <span>SANJANA</span> ❤️</h1>
-
-    <p class="tagline">
-      I didn’t buy a gift…<br>
-      I built one.
-    </p>
-
-    <!-- Smooth Photo Slider -->
-    <div class="slider">
-      <img id="slideImage" src="photo1.jpg" alt="Memory">
-    </div>
-    <!-- pulsing Heart-->
-    <div class="pulse-heart">❤️</div>
-
-    <div class="box">
-      You’re my favorite person,<br>
-      my safe place,<br>
-      my always.
-    </div>
-
-    <h2>RIMJHIM, will you be my Valentine? 🥺</h2>
-
-    <div class="buttons">
-      <button class="yes" onclick="yesClick()">Yes ❤️</button>
-      <button class="no" onmouseover="moveNo()">No 😝</button>
-    </div>
-
-    <p class="hint">Tap anywhere 🎵</p>
+  <div class="buttons">
+    <button id="yes">Yes ❤️</button>
+    <button id="no">No 🙃</button>
   </div>
+</div>
 
-  <script src="script.js"></script>
+<div class="success hidden" id="success">
+  <h1>YAYYY 😍💖</h1>
+  <p>I knew it ❤️</p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
