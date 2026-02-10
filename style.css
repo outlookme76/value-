@@ -14,28 +14,25 @@ body {
   overflow: hidden;
 }
 
-.card {
+.hidden {
+  display: none;
+}
+
+/* MAIN CARD */
+.card, .surprise {
   background: white;
-  padding: 30px;
-  border-radius: 20px;
+  padding: 25px;
+  border-radius: 22px;
   text-align: center;
   width: 90%;
-  max-width: 350px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  animation: pop 0.6s ease;
+  max-width: 360px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+  animation: pop 0.7s ease;
 }
 
 @keyframes pop {
-  0% { transform: scale(0.7); opacity: 0; }
-  100% { transform: scale(1); opacity: 1; }
-}
-
-.card h1 {
-  color: #ff4d6d;
-}
-
-.card h2 {
-  margin: 15px 0;
+  from { transform: scale(0.7); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
 .buttons {
@@ -46,8 +43,8 @@ body {
 
 button {
   padding: 10px 20px;
-  border: none;
   border-radius: 30px;
+  border: none;
   font-size: 16px;
   cursor: pointer;
 }
@@ -62,25 +59,46 @@ button {
   position: relative;
 }
 
-.success {
-  position: absolute;
-  text-align: center;
-  animation: pop 0.6s ease;
+/* PHOTO BOX */
+.photo-box {
+  margin: 15px 0;
+  width: 100%;
+  height: 260px;
+  border-radius: 18px;
+  overflow: hidden;
+  position: relative;
 }
 
-.hidden {
-  display: none;
+.photo-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: fade 0.8s ease;
 }
 
-/* Floating hearts */
-.hearts span {
-  position: absolute;
-  bottom: -20px;
-  font-size: 20px;
-  animation: float 6s linear infinite;
+@keyframes fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-@keyframes float {
-  0% { transform: translateY(0); opacity: 1; }
-  100% { transform: translateY(-110vh); opacity: 0; }
+/* GLOW BORDER */
+.glow {
+  box-shadow:
+    0 0 10px #ff4d6d,
+    0 0 20px #ff4d6d,
+    0 0 40px #ff85a1;
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow:
+      0 0 10px #ff4d6d,
+      0 0 20px #ff4d6d;
+  }
+  to {
+    box-shadow:
+      0 0 25px #ff85a1,
+      0 0 50px #ff85a1;
+  }
 }
