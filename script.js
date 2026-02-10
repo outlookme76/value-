@@ -15,6 +15,13 @@ const music = document.getElementById("bgMusic");
 const retryYes = document.getElementById("retryYes");
 const noText = document.getElementById("noText");
 
+// Force spacing between photo and caption
+const photoBox = document.querySelector(".photo-box");
+
+photoBox.style.marginBottom = "18px"; // SPACE FIX
+caption.style.color = "#444";
+caption.style.fontSize = "15px";
+
 /* ===== CAPTION POLISH (spacing + soft look) ===== */
 caption.style.marginTop = "16px";
 caption.style.color = "#444";
@@ -129,3 +136,4 @@ setInterval(() => {
   hearts.appendChild(h);
   setTimeout(() => h.remove(), 7000);
 }, 400);
+
