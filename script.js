@@ -16,15 +16,15 @@ noBtn.addEventListener("mouseenter", () => {
 /* Photos + captions */
 const slides = [
   {
-    img: "assets/photo1.jpg",
+    img: "photo1.jpg",
     text: "You make everything better ❤️"
   },
   {
-    img: "assets/photo2.jpg",
+    img: "photo2.jpg",
     text: "My favorite smile 😍"
   },
   {
-    img: "assets/photo3.jpg",
+    img: "photo3.jpg",
     text: "Forever looks good with you 💖"
   }
 ];
@@ -81,3 +81,4 @@ function playMusic() {
     if (v >= 0.7) clearInterval(fade);
   }, 200);
 }
+
