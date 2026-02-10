@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- FLOATING HEARTS -->
 <div id="hearts"></div>
 
 <!-- MAIN CARD -->
@@ -23,7 +22,7 @@
   </div>
 </div>
 
-<!-- SURPRISE / YES PATH -->
+<!-- YES PATH -->
 <div class="surprise hidden" id="surprise">
   <div id="progress">🤍 🤍 🤍 🤍 🤍 🤍 🤍</div>
 
@@ -31,30 +30,27 @@
     <img id="slidePhoto" src="assets/photo1.jpg" />
   </div>
 
+  <!-- IMPORTANT: caption is OUTSIDE photo-box -->
   <p id="caption"></p>
 </div>
 
-<!-- FINAL YES MESSAGE -->
+<!-- FINAL PAGE -->
 <div class="final hidden" id="final">
   <h1>One last thing… 💌</h1>
   <p class="finalText hidden">
     No matter where life takes us,<br>
     I choose you — always ❤️
   </p>
-
-  <button id="shareBtn">Share 💌</button>
 </div>
 
-<!-- NO STORY PAGE -->
+<!-- NO PAGE -->
 <div class="noPage hidden" id="noPage">
   <h1>Oh no 😳</h1>
   <p id="noText"></p>
   <button id="retryYes">Okay fine… YES ❤️</button>
 </div>
 
-<!-- AUDIO -->
 <audio id="bgMusic" src="assets/music.mp3" loop></audio>
-<audio id="clickSound" src="assets/click.mp3"></audio>
 
 <script src="script.js"></script>
 </body>
