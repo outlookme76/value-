@@ -59,7 +59,7 @@ function startSlideshow() {
     }
     showSlide(index);
 
-    if (cycles === 2 && index === slides.length - 1) {
+    if (cycles === 1 && index === slides.length - 1) {
       clearInterval(interval);
       setTimeout(() => {
         surprise.classList.add("hidden");
@@ -67,7 +67,7 @@ function startSlideshow() {
         document.querySelector(".finalText").classList.remove("hidden");
       }, 2500);
     }
-  }, 3000);
+  }, 1500);
 }
 
 /* MUSIC */
@@ -129,3 +129,4 @@ setInterval(() => {
   hearts.appendChild(h);
   setTimeout(() => h.remove(), 7000);
 }, 400);
+
