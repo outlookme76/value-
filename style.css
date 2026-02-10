@@ -107,8 +107,7 @@ button {
 
 /* Caption */
 #caption {
-  margin-top: 6px;          /* small extra breathing room */
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.4;
   color: #444;
   text-align: center;
@@ -154,5 +153,6 @@ button {
     opacity: 0;
   }
 }
+
 
 
