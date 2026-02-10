@@ -104,7 +104,7 @@ function startSlideshow() {
     }
 
     showSlide(index);
-  }, 2000); // ~10 seconds total
+  }, 2500); // ~10 seconds total
 }
 
 /* ================= MUSIC ================= */
@@ -160,3 +160,8 @@ setInterval(() => {
   hearts.appendChild(h);
   setTimeout(() => h.remove(), 7000);
 }, 400);
+
+.photo-box {
+  margin-bottom: 24px !important;
+}
+
