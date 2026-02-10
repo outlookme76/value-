@@ -62,7 +62,7 @@ function startSlideshow() {
       return;
     }
     showSlide(index);
-  }, 1500);
+  }, 2500);
 }
 
 /* Music */
@@ -116,3 +116,4 @@ setInterval(() => {
   hearts.appendChild(h);
   setTimeout(() => h.remove(), 7000);
 }, 400);
+
