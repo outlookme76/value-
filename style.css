@@ -107,10 +107,7 @@ button {
 
 /* Caption */
 #caption {
-  font-size: 16px;
-  line-height: 1.4;
-  color: #444;
-  text-align: center;
+  white-space: pre-wrap;
 }
 
 /* ================= GLOW ================= */
@@ -153,6 +150,7 @@ button {
     opacity: 0;
   }
 }
+
 
 
 
